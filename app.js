@@ -2,17 +2,17 @@ var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
-var usersApi = require('./routes/api/users');
 var path = require('path');
 var logger = require('morgan');
+var cors = require('cors');
 var router = express.Router();
-// var cors = require("cors");
+var usersApi = require('./routes/api/users');
 const User = require('./models/user.model');
 
 require('./configs/database');
 
 var app = express();
-// app.use(cors());
+app.use(cors());
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
