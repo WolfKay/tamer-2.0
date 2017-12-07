@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "start": "node ./bin/www"
+        "start": "nodemon ./bin/www"
     },
     "dependencies": {
         "body-parser": "*",
@@ -18,5 +18,8 @@
     "description": "",
     "main": "app.js",
     "author": "kayCodes",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^1.12.5"
+    }
 }

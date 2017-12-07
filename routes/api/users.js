@@ -35,12 +35,13 @@ router.post('/users', (req, res, next) => {
 });
 
 /* GET Users */
-router.get('/users', function(req, res, next) {
-    User.find({}, (err, usersList) => {
+router.get('/users', (req, res, next) => {
+    User.find((err, usersList) => {
         if (err) {
-            return res.json(err).status(500);
+            res.json(err).status(500);
+            return;
         }
-        return res.json(entries).status(200);
+        res.json(usersList).status(200);
     });
 });
 
