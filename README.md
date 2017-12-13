@@ -1,5 +1,5 @@
-*# tamer-2.0*
-Dating App for Gamers! Ver. 2.0
+# tamer-2.0
+*Dating App for Gamers! Ver. 2.0*
 
            _____
           /     \
